@@ -19,7 +19,7 @@ function bread(){
     ]
 
     const breadList = breads.map(breadChoose=>(
-        <div className="content">
+        <div key={breadChoose.name} className="content">
         <img className="img" src={breadChoose.image}/>
         <p>{breadChoose.name}</p>
       </div>
